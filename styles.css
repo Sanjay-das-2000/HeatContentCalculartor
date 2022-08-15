@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mukta+Malar&family=Secular+One&family=Source+Sans+Pro&family=Tiro+Gurmukhi&family=Varela+Round&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    background-image: url("image/heat-transfer.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.form{
+    width: 37vw;
+    min-width: 3vw;
+    height: 32vh;
+    background-color: rgb(244, 244, 244);
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px 1px rgb(68, 68, 68);
+    padding: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2{
+    margin: 10px 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form input{
+    width: 15vw;
+    height: 3.7vh;
+    border-color: rgb(211, 211, 211);
+    border-width: 1px;
+    border-style:solid;
+    border-radius: 2px;
+    padding: 2px;
+    margin-top: 5px;
+
+}
+
+
+.form input:focus{
+    outline: none;
+}
+.button{
+    display: flex;
+    justify-content:flex-end;
+}
+
+button{
+    padding: 8px 14px;
+    background-color: rgb(7, 76, 165);
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: rgb(26, 112, 210);
+    cursor:pointer;
+
+}
+.first-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row{
+    margin: 10px 2px;
+}
+
+.form-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* show value  */
+
+.showValueBack{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.showValue{
+    width: 50vw;
+    height: 15vh;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    background-color: aliceblue;
+    border-radius: 50px;
+    box-shadow: 1px 1px 12px 1px rgb(25, 22, 69);
+    animation: slide-down 300ms ease-out forwards;
+}
+
+.value{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Mukta Malar', sans-serif;
+    margin-top: 10px;
+}
+
+.showbutton{
+    display: flex;
+    justify-content: center;
+}
+
+.showbutton button{
+    padding: 8px 30px;
+    border-radius: 30px;
+}
+
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* media quary  */
+
+  @media only screen and (max-width: 950px){
+    .form{
+        width: 45vw;
+    }
+    .form input{
+        width: 20vw;
+    }
+    .showValue{
+        width: 64vw;
+        height: 13vh;
+        left: 18%;
+    }
+    
+    .value{
+        font-size: 1.5rem;
+    }
+  } 
+
+  @media only screen and (max-width: 700px){
+    .form{
+        width: 62vw;
+    }
+    .form input{
+        width: 25vw;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .form-container{
+        margin-top: 7%;
+    }
+} 
+
+@media only screen and (max-width: 500px){
+    .form{
+        width: 62vw;
+        height: 40vh;
+    }
+    .form input{
+        width: 60vw;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    .form-container{
+        margin-top: 10%;
+    }
+    .form-div{
+        flex-direction: column;
+    }
+    .button{
+        justify-content: center;
+    }
+    .showValue{
+        width: 68vw;
+        height: 11vh;
+        left: 16%;
+    }
+    
+    .value{
+        font-size: 1.15rem;
+    }
+  }
+  

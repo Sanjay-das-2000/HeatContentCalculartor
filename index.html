@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <mata charset="utf-8"></mata>
+        <title>Heat Content Calculator</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="container">
+            <h1>Heat Content Calculator</h1>
+            <form class="form-container">
+                <div class="form">
+                    <h2>Enter  your  values</h2><hr>
+                    <div class="form-div row">
+                        <div>
+                            <label>Mass (K.G.)</label><br>
+                            <input type="text" id="mass"> 
+                        </div>
+                        <div>
+                            <label>Specific heat (J/K)</label><br>
+                            <input type="text" id="specificHeat" > 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>Change in Temperature (K)</label><br>
+                        <input type="text" id="temperature"> 
+                    </div>
+                    <div class="button" id="Button">
+                        <button class="button" type="button">Calculate</button>
+                    </div>
+                </div>
+            </form>
+            <div id="showdiv" class="showValueBack">
+                <div id="innershowdiv" class="showValue">
+                    <div class="value">
+                        <p id="text"></p>
+                    </div>
+                    <div class="showbutton">
+                        <form>
+                            <button id="removeshowdiv">Ok</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>
